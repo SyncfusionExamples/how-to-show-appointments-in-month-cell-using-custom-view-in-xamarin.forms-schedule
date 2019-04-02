@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomMonthCellView"
+             xmlns:schedule="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             x:Class="CustomMonthCellView.ScheduleView">
+    <ContentPage.Content>
+        <schedule:SfSchedule ScheduleView="MonthView" DataSource="{Binding ScheduleAppointments}">
+            <schedule:SfSchedule.AppointmentMapping>
+                <schedule:ScheduleAppointmentMapping 
+                    StartTimeMapping="From"
+                    EndTimeMapping="To"
+                    ColorMapping="Color"
+                    SubjectMapping="Event"
+                    IsAllDayMapping="AllDay">
+                </schedule:ScheduleAppointmentMapping>
+            </schedule:SfSchedule.AppointmentMapping>
+            <schedule:SfSchedule.Behaviors>
+                <local:ScheduleBehavior/>
+            </schedule:SfSchedule.Behaviors>
+            <schedule:SfSchedule.BindingContext>
+                <local:ViewModel/>
+            </schedule:SfSchedule.BindingContext>
+        </schedule:SfSchedule>
+    </ContentPage.Content>
+</ContentPage>
