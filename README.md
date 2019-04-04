@@ -1,6 +1,6 @@
 # How to show appointments in month cell using custom view in Xamarin.Forms schedule?
 
-This example demonstrates to display schedule appointments in month cell using custom view in Xamarin.Forms.
+This example demonstrates to show schedule appointments in month cell using custom view in Xamarin.Forms.
 
 See [How to show appointments in month cell using custom view in Xamarin.Forms schedule?](https://www.syncfusion.com/kb/10336/how-to-show-appointments-in-month-cell-using-custom-view-in-xamarin-forms-schedule) for more details.
 
@@ -12,4 +12,3 @@ See [How to show appointments in month cell using custom view in Xamarin.Forms s
 ## <a name="troubleshooting"></a>Troubleshooting ##
 ### Path too long exception
 If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
-
